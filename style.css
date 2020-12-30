@@ -15,7 +15,8 @@ body {
 
 
 .calculator {
-    background-color: #4B4453;
+    /*background-color: #4B4453;*/
+    background-color: rgba(75, 68, 83, 0.2);
     height: 465px;
     width: 300px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -30,7 +31,7 @@ body {
 	align-items: flex-end;
 	align-content: stretch;
     height: 10px;
-    color:rgb(189, 189, 189);
+    color:rgb(223, 223, 223);
     font-size: 1rem;
     padding-top: 15px;
     padding-bottom: 0px;
@@ -48,8 +49,9 @@ body {
     height: 50px;
     color:rgb(241, 241, 241);
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 700;
     padding-right: 5px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
 }
 
 .numbersSection {
@@ -85,14 +87,18 @@ body {
 
 button {
     height: 10vh; 
-    background-color: #FEFEDF; 
+    /*background-color: #FEFEDF; */
+    background-color: rgba(254, 254, 223, 0.3);
     /*background-image: linear-gradient(to left bottom, #d4d4d4, #d8d8d8, #dbdbdb, #dfdfdf, #e3e3e3);*/
     border: 1px solid rgba(22, 22, 22, 0.1);
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    color:rgb(223, 223, 223);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+    font-weight: 800;
     cursor: pointer;
     outline: none;
+
 }
 
 .theme {
@@ -119,67 +125,27 @@ button {
 #clear {
    /* background-image: linear-gradient(to left bottom, #ffa868, #ffa35e, #ff9d55, #ff984b, #ff9241);*/
   /*background-color: #FFC75F;*/
-   background-color: #FFA5AB;
+   /*background-color: #FFA5AB;*/
+   background-color: rgba(255, 165, 171, 0.3);
 }
 
 button:hover {
-    background-color: #F3C5FF;
+    background-color: #ffaef1;
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 600;
+    color:rgb(37, 37, 37);
 }
 
 .operator:hover, 
 #backspace:hover,
 #clear:hover {
   /* background-image: linear-gradient(to right top, #ffdd69, #ffd757, #ffd143, #ffcb2c, #ffc500); */
-    background-color: #F3C5FF;
-    font-size: 1.8rem;
-    font-weight: bolder;
+    background-color: #ffcfaf;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color:rgb(37, 37, 37);
 }   
 
-
-@media all and (max-width: 600px){
-    .calculator {
-        background-color: #4B4453;
-        height: 250;
-        width: 500px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        border-radius: 3px;
-    }
-
-    .historyOperator {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-        align-content: stretch;
-        height: 10px;
-        color:rgb(189, 189, 189);
-        font-size: 1rem;
-        padding-top: 15px;
-        padding-bottom: 0px;
-        padding-right: 5px;
-        margin-bottom: 0px; 
-    }
-    
-    .currentOperator {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-        align-content: stretch;
-        height: 50px;
-        color:rgb(241, 241, 241);
-        font-size: 1.7rem;
-        font-weight: 500;
-        padding-right: 5px;
-    }
-
-    .numbersSection {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 10px;
-    }   
+.new_theme1:hover {
+    background-color: rgb(66, 226, 199)
 }
